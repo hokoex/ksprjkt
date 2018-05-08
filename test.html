@@ -4,7 +4,6 @@
 		<meta charset="Windows-1251">
 		<title>Лексика испанского языка</title>
 		<style>
-
 		.sticky.v:hover .front, .sticky.v.flip .front{
 				transform: rotateY(180deg);
 			}
@@ -39,8 +38,6 @@
 				transition: all 0.5s ease-in;
 				backface-visibility: hidden;
 			}
-
-
 			.header {
 				position: fixed;
 				}
@@ -66,6 +63,16 @@
 			#navbar a.active{
 				background-color: #4CAF50;
 				color: white;
+				}
+			.bl-t{
+				float: right;
+				display: block;
+				background-color: #ddd;
+				color: black;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px
 				}
 			.sticky {
 				position: fixed;
@@ -122,7 +129,6 @@
 			p{
 				margin-left: 10px;
 				font-size: 16px;
-
 				font-family: Arial;
 				}
 			img{
@@ -138,6 +144,7 @@
 		<a href="https://hokoex.github.io/ksprjkt/clovar'.html">Словарь</a>
 		<a href="https://hokoex.github.io/ksprjkt/dialog1.html">Диалоги</a>
 		<a class="active" href="javascript:void(0)">Тест</a>
+		<div class="bl-t">Помощник студента лингвиста в изучении лексики испанского языка</div>
 	</div>
 		<div class="container">
 			<div class="block-1">Проверка знаний</div>
@@ -183,7 +190,26 @@
 
                 <ul id="bla-bla1" style="display: none">
 
-                        <li><img src="https://i.imgur.com/2qgosdY.jpg"></li>
+                        <li>p.39 ej.1</li>
+			<li>alcohol, vendras, tiritas, analgesicos, gasas, algodon, antiseptico, pomada</li>
+			<li>(спирт, бинты, пластыри, обезболивающие, марли, вата, антисептик, мазь)</li>
+			<li></li>
+			<li>p.39 ej.2</li>
+			<li>1.C</li>
+			<li>2.D</li>
+			<li>3.E</li>
+			<li>4.G</li>
+			<li>5.B</li>
+			<li>6.F</li>
+			<li>7.H</li>
+			<li>8.A</li>
+			<li></li>
+			<li>p.40 ej.1</li>
+			<li>1. Se siente cansado</li>
+			<li>2. No, acaba de dejarlo</li>
+			<li>3. Ninguna</li>
+			<li>4. No, ninguno</li>
+			<li>5. Unas pastillas, vitaminas</li>
 
                 </ul>
 
@@ -192,18 +218,47 @@
 </ul>
 				<img src="https://i.imgur.com/TuRxxOr.jpg">
 				<img src="https://i.imgur.com/ZcMDUTm.jpg">
+			<ul>
+
+        <li onClick="toggle_show('bla-bla0')"><font color="blue">Ответы</font>
+
+                <ul id="bla-bla0" style="display: none">
+
+			<li>p.33 ej.1</li>
+			<li>1 — frente; 2 — nariz; 3 — labios; 4 — mejilla; 5 — barbilla; 6 — brazo;</li>
+			<li> 7 — cintura; 8 — rodilla; 9 — pie; 10 — pelo; 11 — oreja; 12 — cuello;</li>
+			<li>13 — hombro; 14 — espalda; 15 — codo; 16 — mano; 17 — pierna; 18 — talon</li>
+			<li></li>
+			<li>p.33 ej.2 </li>
+			<li>1 — el cerebro; 2 — la garganta; 3 — el corazon;</li>
+			<li>4 — el pulmon; 5 — el higado; 6 — el estomago; 7 — el rinon</li>
+			<li></li>
+			<li>p.33 ej.3</li>
+			<li>1 — los ojos; 2 — la boca, los labios; 3 — la nariz;</li>
+			<li>4 — la garganta; 5 — los brazos; 6 — los pulmones</li>
+			<li></li>
+			<li>p.34 ej.1</li>
+			<li>1 — cara; 2 — pelo; 3 — frente; 4 — codos; 5 — lengua; 6 — una; 7 — pierna;</li>
+			<li>8 — cabeza; 9 — mano; 10 — boca; 11 — ojo; 12 — narices; 13 — pie; 14 — pies</li>
+			<li></li>
+			<li>p.34 ej.2</li>
+			<li>A — 14; B — 1; C — 2; D — 5; E — 3; F — 4; G — 7; H — 6;</li>
+			<li>I — 13; J — 8; K — 11; L — 9; M — 10; N — 12</li>
+			</ul>
+
+        </li>
+
+</ul>
 </div>
 			<div class="bl bl-6">Footer</div>
 		<script>
 function toggle_show(id) {
 	document.getElementById(id).style.display = document.getElementById(id).style.display == 'none' ? 'block' : 'none';
 }
-
 		window.onscroll = function() {myFunction()};
 		
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
-
 		function myFunction() {
 			if (window.pageYOffset >= sticky) {
 				navbar.classList.add("sticky")
@@ -211,7 +266,6 @@ function toggle_show(id) {
 				navbar.classList.remove("sticky");
 			}
 		}
-
 		</script>
 	</body>
 </html>
