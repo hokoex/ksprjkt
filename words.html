@@ -39,8 +39,6 @@
 				transition: all 0.5s ease-in;
 				backface-visibility: hidden;
 			}
-
-
 			.header {
 				position: fixed;
 				}
@@ -82,7 +80,6 @@
 				}
 			.block-1{
 				font-size: 22px;
-
 				font-family: Arial;
 				background-color:#FFFFFF;
 				text-align: center;
@@ -122,50 +119,72 @@
 				border: 1px solid #000000;
 				}
 			.bl-7{
-				position: absolute;
-				clear: both;
-				width: 370px;
+				overflow: hidden;
+				
+				width: 35%;
 				height: 200px;
 				float: left;
 				margin-left: 60px;
 				border: 2px solid #000000;
 				}
 			.bl-8{
-				position: absolute;
-				clear: both;
-				width: 520px;
+				
+				overflow: hidden;
+				width: 50%;
 				height: 200px;
-				float: left;
-				margin-left: 430px;
+				float: right;
+				margin-right: 60px;
 				border: 2px solid #000000;
 				padding-top: 2px;
 				}
 			p{	
 				font-size: 16px;
-
 				font-family: Arial;
-				position: absolute;
+				
 				}
 			.p1{
 				font-size: 16px;
-
 				font-family: Arial;
-				position: absolute;
-				clear: both;
+				
+				
+				float: right;
+				margin-right:5px;
+				margin-top: 15px;
+				}
+			.bl-71{
+				font-size: 16px;
+				font-family: Arial;
+				
+				
 				float: left;
-				margin-left: 150px;
-				margin-top: 30px;
+				margin-left: 5px;
+				margin-top: 7px;
 				}
 			.mm{
 				float:left;
 				margin-left: 5px;
+				margin-top: 15px;
 				}
 			.mm2{
-				margin-left: 170px;
+				float: left;
+				margin-left: 45px;
+				margin-top: 15px;
 				}
 			.mm3{
-				margin-left: 365px;
+				float: right;
+				margin-right: 5px;
+				margin-top: 15px;
 				}
+			.bl-t{
+float: right;
+display: block;
+background-color: #ddd;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px
+}
 		</style>
 	</heda>
 	<body>
@@ -176,15 +195,18 @@
 		<a href="https://hokoex.github.io/ksprjkt/clovar'.html">Словарь</a>
 		<a href="https://hokoex.github.io/ksprjkt/dialog1.html">Диалоги</a>
 		<a href="https://hokoex.github.io/ksprjkt/test.html">Тест</a>
+		<div class="bl-t">Помощник студента лингвиста в изучении лексики испанского языка</div>
 	</div>
 		<div class="container">
 			<div class="block-1">В этом уроке мы пройдем лексику «Mi cuerpo»</div>
 			<div class="bl bl-3"><br>
-				<div class="bl-7"><p><br><br><br>el pelo<br>
-				волосы</p>
+				<div class="bl-7">
+					<div class="bl-71"><br><br><br>el pelo<br>
+				волосы</div>
 				<div class="p1"> ~ corte - короткие<br>~ mediano - средней длины<br>~ largo - длинные<br>~ negro - чёрные<br>~ rubio - светлые<br>~ tenido - рыжие, крашенные<br>~ castano - каштановые
 				</div>
-				<div class="bl-8"><div class="mm"><p>la cabeza - голова 
+				</div>
+				<div class="bl-8"><div class="mm">la cabeza - голова 
 <br>la nariz - нос 
 <br>las orejas - уши
 <br>la boca - рот
@@ -193,9 +215,9 @@
 <br>la barba - борода, 
 <br>подбородок
 
-				</p>
+				
 					</div>
-				<div class="mm2"><p>la barbilla - подбородок
+				<div class="mm2">la barbilla - подбородок
 <br>la cerda - щетина
 <br>el cuello - шея
 <br>la mano – кисть
@@ -203,9 +225,9 @@
 <br>el vientre - живот
 <br>la barriga - живот, брюхо
 <br>la espalda - спина
-				</p>
+				
 					</div>
-				<div class="mm3"><p>las manos - руки
+				<div class="mm3">las manos - руки
 <br>los pies - ступни, ноги
 <br>las piernas - ноги
 <br>el pecho - грудь
@@ -213,20 +235,19 @@
 <br>el codo – локоть
 <br>la rodilla — колено
 <br>el ojo — глаз
-				</p>
+				
 					</div>
 				</div>
 			</div>
 			</div>
 			<div class="bl bl-4"><a href="https://hokoex.github.io/ksprjkt/Main_page.html">Главная</a></div>
 			<div class="bl bl-5"><a href="https://hokoex.github.io/ksprjkt/words2.html">Глаголы</a></div>
-			<div class="bl bl-6">Footer</div>
+			<div class="bl bl-6">контактная информация: E-mail: kristy-gro@yandex.ru (Громова Кристина)</div>
 		<script>
 		window.onscroll = function() {myFunction()};
 		
 		var navbar = document.getElementById("navbar");
 		var sticky = navbar.offsetTop;
-
 		function myFunction() {
 			if (window.pageYOffset >= sticky) {
 				navbar.classList.add("sticky")
@@ -234,7 +255,6 @@
 				navbar.classList.remove("sticky");
 			}
 		}
-
 		</script>
 	</body>
 </html>
